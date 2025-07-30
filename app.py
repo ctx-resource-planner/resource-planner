@@ -1,4 +1,4 @@
-﻿# app.py
+# app.py
 
 import keyring
 import os
@@ -1171,6 +1171,17 @@ def email_report():
 
 
 # --- Run the App ---
+
+
+# Project status toggle route
+@app.route('/toggle_project_status/<int:project_id>', methods=['POST'])
+@login_required
+def toggle_project_status(project_id):
+    project = Project.query.get_or_404(project_id)
+    project.status = 'Closed' if project.status != 'Closed' else 'Active'
+    db.session.commit()
+    return '', 204  # Return empty success response
+
 if __name__ == '__main__':
     with app.app_context():
         # IMPORTANT: After updating models.py, you MUST run migrations
@@ -1203,4 +1214,5 @@ def clone_tsheet_upload():
     # return render_template('clone_tsheet_upload.html')
     # For now, we'll redirect back to the main index page.
     return redirect(url_for('index'))
+
 

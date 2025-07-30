@@ -45,7 +45,12 @@
                 <tbody id="projectsTableBody">
                     {% for project_item in projects %}
                     <tr>
-                        <td class="wrap-text">{{ project_item.name }}</td>
+    <td>{{ project_item.name }}</td>
+    <td>
+        <span class="badge {{ 'bg-success' if project.status == 'Active' else 'bg-secondary' }}">
+            {{ project.status or 'Active' }}
+        </span>
+    </td>
                         <td>{{ project_item.service_line or 'N/A' }}</td>
                         <td>{{ project_item.project_type or 'N/A' }}</td>
                         <td class="no-wrap">{{ project_item.sow_start_date | format_date }}</td>
