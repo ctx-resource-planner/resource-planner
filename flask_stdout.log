@@ -19,3 +19,21 @@ RECEIVED PARAMETERS: start_month=None, end_month=None
 REQUEST ARGS: {}
 RECEIVED PARAMETERS: start_month=Jan-2025, end_month=Mar-2025
 REQUEST ARGS: {'start_month': 'Jan-2025', 'end_month': 'Mar-2025'}
+VIEWS.PY LOADED
+VIEWS.PY LOADED
+VIEWS.PY LOADED
+VIEWS.PY LOADED
+Found 26 projects
+Project 1: ODSY - MS, Status: Active
+Project 2: ODSY - OPII, Status: Active
+Project 3: UsefulBI - Gilead - MS, Status: Active
+Found 26 projects
+Project 1: ODSY - MS, Status: Active
+Project 2: ODSY - OPII, Status: Active
+Project 3: UsefulBI - Gilead - MS, Status: Active
+Error in projects_list: Could not build url for endpoint 'edit_project' with values ['project_id']. Did you forget to specify values ['project_id_param']?
+VIEWS.PY LOADED
+VIEWS.PY LOADED
+VIEWS.PY LOADED
+VIEWS.PY LOADED
+VIEWS.PY LOADED

@@ -1,4 +1,4 @@
-﻿# app.py
+# app.py
 
 import keyring
 import os
@@ -6,8 +6,8 @@ from functools import wraps
 from flask import Flask,render_template,request,redirect,url_for,flash,session,send_file,get_flashed_messages
 from dotenv import load_dotenv
 from datetime import date, timedelta, datetime, timezone
-from sqlalchemy import func
-from sqlalchemy.orm import joinedload, selectinload
+from sqlalchemy import func, exc, desc, asc, and_
+from sqlalchemy.orm import joinedload
 from flask_mail import Mail, Message
 import pandas as pd
 from io import BytesIO
@@ -133,7 +133,7 @@ def manage_project_skills(project_id):
 
         # For now, flash message and redirect as feature is not fully implemented
         flash(f"Project skill management for project '{project.name}' is not fully implemented.", "warning")
-        return redirect(url_for('edit_project', project_id=project.id)) # Redirect to edit project page
+        return redirect(url_for('edit_project', project_id_param=project.id)) # Redirect to edit project page
 
     except Exception as e:
         app.logger.error(f"Error accessing project skill management for ID {project_id}: {e}", exc_info=True)
@@ -634,74 +634,61 @@ def add_project():
         return render_template('project_form.html', action='Add', project=request.form)
     return render_template('project_form.html', action='Add', project=None)
 
-
-@app.route('/projects/edit/<int:project_id>', methods=['GET', 'POST'])
+@app.route('/projects/edit/<int:project_id_param>', methods=['GET', 'POST'])
 @admin_required
-def edit_project(project_id):
+def edit_project(project_id_param):
     try:
-        # Eager load the project with its relationships
-        project = Project.query.options(
-            db.joinedload(Project.skill_requirements).joinedload(ProjectSkillRequirement.skill)
-        ).get_or_404(project_id)
-        
-        if request.method == 'POST':
-            # Update basic project info
-            project.name = request.form.get('name', '').strip()
-            project.service_line = request.form.get('service_line', '').strip() or None
-            project.project_type = request.form.get('project_type', '').strip() or None
-            project.status = request.form.get('status', 'Active')
-            
-            # Handle date fields
-            date_fields = {
-                'sow_start_date': request.form.get('sow_start_date'),
-                'sow_end_date': request.form.get('sow_end_date'),
-                'actual_start_date': request.form.get('actual_start_date'),
-                'actual_end_date': request.form.get('actual_end_date')
-            }
-            
-            for field, value in date_fields.items():
-                if value:
-                    setattr(project, field, datetime.strptime(value, '%Y-%m-%d').date())
-                else:
-                    setattr(project, field, None)
-            
-            # Handle decimal fields
-            decimal_fields = {
-                'po_amount': request.form.get('po_amount'),
-                'sow_allocation_fte': request.form.get('sow_allocation_fte'),
-                'actual_allocation_fte': request.form.get('actual_allocation_fte')
-            }
-            
-            for field, value in decimal_fields.items():
-                if value:
-                    try:
-                        setattr(project, field, Decimal(value))
-                    except (ValueError, InvalidOperation):
-                        flash(f"Invalid value for {field.replace('_', ' ')}", 'warning')
-                        return render_template('project_form.html', action='Edit', project=project)
-                else:
-                    setattr(project, field, None)
-            
-            db.session.commit()
-            flash('Project updated successfully!', 'success')
-            return redirect(url_for('projects_list'))
-            
-        # For GET request, render the edit form
-        return render_template('project_form.html', action='Edit', project=project)
-        
-    except Exception as e:
-        db.session.rollback()
-        current_app.logger.error(f"Error in edit_project: {str(e)}", exc_info=True)
-        flash('Error loading project details. Please check the database connection and try again.', 'error')
+         project_to_edit = Project.query.options(
+             selectinload(Project.skill_requirements).joinedload(ProjectSkillRequirement.skill)
+         ).filter_by(id=project_id_param).first_or_404()
+    except Exception as query_e:
+        app.logger.error(f"Error loading project ID {project_id_param} with skill requirements for edit: {query_e}", exc_info=True)
+        flash("Error loading project details, check database setup and ProjectSkillRequirement model/relationship.", "danger")
         return redirect(url_for('projects_list'))
-@app.route('/projects/delete/<int:project_id>', methods=['POST'])
+
+    if request.method == 'POST':
+        name = request.form.get('name', '').strip()
+        service_line = request.form.get('service_line', '').strip() or None
+        project_type = request.form.get('project_type', '').strip() or None
+        sow_start_date_str = request.form.get('sow_start_date')
+        sow_end_date_str = request.form.get('sow_end_date')
+        actual_start_date_str = request.form.get('actual_start_date')
+        actual_end_date_str = request.form.get('actual_end_date')
+        po_amount_str = request.form.get('po_amount')
+        sow_allocation_fte_str = request.form.get('sow_allocation_fte')
+        actual_allocation_fte_str = request.form.get('actual_allocation_fte')
+        if not name: flash('Project name cannot be empty.', 'warning')
+        else:
+            existing_project = Project.query.filter(func.lower(Project.name) == func.lower(name), Project.id != project_id_param).first()
+            if existing_project: flash(f'Another project with the name \"{name}\" already exists.', 'warning'); return render_template('project_form.html', action='Edit', project=project_to_edit)
+            else:
+                try:
+                    project_to_edit.name = name
+                    project_to_edit.service_line = service_line
+                    project_to_edit.project_type = project_type
+                    project_to_edit.sow_start_date = datetime.strptime(sow_start_date_str, '%Y-%m-%d').date() if sow_start_date_str else None
+                    project_to_edit.sow_end_date = datetime.strptime(sow_end_date_str, '%Y-%m-%d').date() if sow_end_date_str else None
+                    project_to_edit.actual_start_date = datetime.strptime(actual_start_date_str, '%Y-%m-%d').date() if actual_start_date_str else None
+                    project_to_edit.actual_end_date = datetime.strptime(actual_end_date_str, '%Y-%m-%d').date() if actual_end_date_str else None
+                    project_to_edit.po_amount = Decimal(po_amount_str) if po_amount_str else None
+                    project_to_edit.sow_allocation_fte = Decimal(sow_allocation_fte_str) if sow_allocation_fte_str else None
+                    project_to_edit.actual_allocation_fte = Decimal(actual_allocation_fte_str) if actual_allocation_fte_str else None
+                    db.session.commit(); flash(f'Project \"{project_to_edit.name}\" updated successfully.', 'success'); return redirect(url_for('projects_list'))
+                except (ValueError, InvalidOperation): flash("Invalid data format for date or PO amount.", "danger")
+                except exc.SQLAlchemyError as e: db.session.rollback(); flash(f'Database error updating project: {e}', 'danger'); app.logger.error(f"DB Error updating project ID {project_id_param}: {e}", exc_info=True)
+                except Exception as e: db.session.rollback(); flash(f'An unexpected error occurred: {e}', 'danger'); app.logger.error(f"Error updating project ID {project_id_param}: {e}", exc_info=True)
+        return render_template('project_form.html', action='Edit', project=project_to_edit)
+
+    return render_template('project_form.html', action='Edit', project=project_to_edit)
+
+@app.route('/projects/delete/<int:project_id_param>', methods=['POST'])
 @admin_required
-def delete_project(project_id):
-    project_to_delete = Project.query.get_or_404(project_id)
+def delete_project(project_id_param):
+    project_to_delete = Project.query.get_or_404(project_id_param)
     try: project_name = project_to_delete.name; db.session.delete(project_to_delete); db.session.commit(); flash(f'Project "{project_name}" deleted successfully.', 'success')
-    except exc.IntegrityError as e: db.session.rollback(); flash(f'Error deleting project "{project_to_delete.name}": Check related allocations or skill requirements.', 'danger'); app.logger.warning(f"IntegrityError deleting project ID {project_id}: {e}")
-    except exc.SQLAlchemyError as e: db.session.rollback(); flash(f'Database error deleting project "{project_to_delete.name}": {e}', 'danger'); app.logger.error(f"DB Error deleting project ID {project_id}: {e}", exc_info=True)
-    except Exception as e: db.session.rollback(); flash(f'An unexpected error occurred while deleting project "{project_to_delete.name}": {e}', 'danger'); app.logger.error(f"Error deleting project ID {project_id}: {e}", exc_info=True)
+    except exc.IntegrityError as e: db.session.rollback(); flash(f'Error deleting project "{project_to_delete.name}": Check related allocations or skill requirements.', 'danger'); app.logger.warning(f"IntegrityError deleting project ID {project_id_param}: {e}")
+    except exc.SQLAlchemyError as e: db.session.rollback(); flash(f'Database error deleting project "{project_to_delete.name}": {e}', 'danger'); app.logger.error(f"DB Error deleting project ID {project_id_param}: {e}", exc_info=True)
+    except Exception as e: db.session.rollback(); flash(f'An unexpected error occurred while deleting project "{project_to_delete.name}": {e}', 'danger'); app.logger.error(f"Error deleting project ID {project_id_param}: {e}", exc_info=True)
     return redirect(url_for('projects_list'))
 
 def validate_allocation_data(form_data):
@@ -1210,6 +1197,45 @@ def toggle_project_status(project_id):
     return '', 204  # Return empty success response
 
 
+@app.route('/edit_project/<int:project_id>', methods=['GET', 'POST'])
+@login_required
+def edit_project(project_id):
+    project = Project.query.get_or_404(project_id)
+    if request.method == 'POST':
+        # Update project fields here
+        project.name = request.form.get('name')
+        project.status = request.form.get('status', 'Active')
+        # Add other fields as needed
+        db.session.commit()
+        flash('Project updated successfully!', 'success')
+        return redirect(url_for('projects_list'))
+    return render_template('edit_project.html', project=project)
+
+
+if __name__ == '__main__':
+    with app.app_context():
+        # IMPORTANT: After updating models.py, you MUST run migrations
+        # (e.g., flask db migrate, flask db upgrade) or db.create_all()
+        # if that's how you manage your schema and are starting fresh.
+        # Since the table exists, migrations are the correct approach.
+        try: #db.create_all() # Commented out assuming migrations are used
+            app.logger.info("Database tables checked/created (if using db.create_all()).")
+        except exc.OperationalError as e: app.logger.error(f"!!! Database connection failed: {e} !!!"); app.logger.error(f"Ensure DB server is running and DATABASE_URL in .env is correct: {app.config.get('SQLALCHEMY_DATABASE_URI')}")
+        except Exception as e: app.logger.error(f"An unexpected error occurred during DB check/creation: {e}", exc_info=True)
+
+    is_debug_mode = os.environ.get("FLASK_ENV", "production").lower() == "development"
+    port = int(os.environ.get("HTTP_PLATFORM_PORT", os.environ.get("FLASK_RUN_PORT", os.environ.get("PORT", 5000))))
+    host = '127.0.0.1' if "HTTP_PLATFORM_PORT" in os.environ or "PORT" in os.environ else '0.0.0.0'
+    if not is_debug_mode:
+        if not app.config.get('MAIL_DEFAULT_SENDER'):
+             app.logger.warning("MAIL_DEFAULT_SENDER is not set. Email functionality may fail.")
+        if app.config.get('SECRET_KEY', os.urandom(24)) == os.urandom(24):
+             app.logger.warning("SECRET_KEY is not set via environment variable. Using a temporary key. THIS IS INSECURE FOR PRODUCTION.")
+
+
+    app.run(host=host, port=port, debug=is_debug_mode)
+    
+    
 @app.route('/utilities/clone_tsheet_upload')
 @admin_required # Ensures only admins can access this page
 def clone_tsheet_upload():
@@ -1218,15 +1244,6 @@ def clone_tsheet_upload():
     # return render_template('clone_tsheet_upload.html')
     # For now, we'll redirect back to the main index page.
     return redirect(url_for('index'))
-
-
-
-
-
-
-
-
-
 
 
 
