@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block title %}Project Setup Preview{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h4><i class="fas fa-eye"></i> Project Setup Preview - Please Review Before Submitting</h4>
+                </div>
+                <div class="card-body">
+                    
+                    <!-- Section A: Project & Customer Details -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h5>Section A. Project & Customer Details</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <table class="table table-borderless">
+                                        <tr><td><strong>Company Name:</strong></td><td>{{ data.company_name or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Customer Name:</strong></td><td>{{ data.customer_name or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Customer Abbreviation:</strong></td><td>{{ data.customer_abbreviation or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Project Name (Quickbooks):</strong></td><td>{{ data.project_name_quickbooks or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Customer Address:</strong></td><td>{{ data.customer_address or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Bill-To Contact Name:</strong></td><td>{{ data.customer_bill_contact_name or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Bill-To Contact Email:</strong></td><td>{{ data.customer_bill_contact_email or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Bill-To Contact Phone:</strong></td><td>{{ data.customer_bill_contact_phone or 'Not provided' }}</td></tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-6">
+                                    <table class="table table-borderless">
+                                        <tr><td><strong>Customer PO Number:</strong></td><td>{{ data.customer_po_number or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Project Type:</strong></td><td>{{ data.project_type or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Project Start Date:</strong></td><td>{{ data.project_start_date or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Estimated End Date:</strong></td><td>{{ data.estimated_end_date or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Project Status:</strong></td><td>{{ data.project_status or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>As-Bid Gross Margin:</strong></td><td>{{ data.as_bid_gross_margin or 'Not provided' }}</td></tr>
+                                        <tr><td><strong>Estimating Sheet Link:</strong></td><td>
+                                            {% if data.project_estimating_sheet_link %}
+                                                <a href="{{ data.project_estimating_sheet_link }}" target="_blank">{{ data.project_estimating_sheet_link }}</a>
+                                            {% else %}
+                                                Not provided
+                                            {% endif %}
+                                        </td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section B: Employee/Contractor Details -->
+					<!-- Section B: Employee/Contractor Details -->
+<!-- Section B: Employee/Contractor Details -->
+<!-- Section B: Employee/Contractor Details -->
+<div class="card mb-4">
+    <div class="card-header bg-info text-white">
+        <h5 class="mb-0">Section B. Employee/Contractor Details</h5>
+    </div>
+    <div class="card-body">
+        {% if employee_data %}
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Employee Email</th>
+                        <th>New Employee Name</th>
+                        <th>New Employee Email</th>
+                        <th>Location</th>
+                        <th>Service</th>
+                        <th>Bill Rate</th>
+                        <th>Cost Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for emp in employee_data %}
+                        <tr>
+                            <td>{{ emp.employee_name }}</td>
+                            <td>{{ emp.new_employee_name }}</td>
+                            <td>{{ emp.new_employee_email }}</td>
+                            <td>{{ emp.location }}</td>
+                            <td>{{ emp.service }}</td>
+                            <td>{{ emp.bill_rate }}</td>
+                            <td>{{ emp.cost_rate }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p class="text-muted">No employee details provided.</p>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Section C: Fixed Price & Managed Service Details -->
+<div class="card mb-4">
+    <div class="card-header bg-info text-white">
+        <h5 class="mb-0">Section C. Fixed Price & Managed Service Details</h5>
+    </div>
+    <div class="card-body">
+        {% if fixed_price_data %}
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for fp in fixed_price_data %}
+                        <tr>
+                            <td>{{ fp.description }}</td>
+                            <td>${{ fp.amount }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p class="text-muted">No fixed price details provided.</p>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Action Buttons (moved outside the Section C card) -->
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="d-flex justify-content-between">
+            <form method="GET" action="{{ url_for('utilities.project_setup') }}">
+                <button type="submit" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Go Back & Edit
+                </button>
+            </form>
+            
+            <!--<form method="POST" action="{{ url_for('utilities.process_project_setup_submission') }}">-->
+			<form method="POST" action="{{ url_for('utilities.project_setup_submit') }}">
+
+                <button type="submit" class="btn btn-success">
+                    <i class="fas fa-check"></i> Confirm & Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

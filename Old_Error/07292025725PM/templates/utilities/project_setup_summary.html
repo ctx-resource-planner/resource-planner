@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Project Setup Summary</h2>
+        <div>
+            <a href="{{ url_for('utilities.download_project_pdf', project_id=project.id) }}" 
+               class="btn btn-primary me-2">
+                <i class="fas fa-download"></i> Download PDF
+            </a>
+            <button onclick="window.print()" class="btn btn-outline-secondary">
+                <i class="fas fa-print"></i> Print
+            </button>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Project Information</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Project Name</h6>
+                        <p class="mb-3">{{ project.project_name_quickbooks or 'N/A' }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Customer Name</h6>
+                        <p class="mb-3">{{ project.customer_name or 'N/A' }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Company Name</h6>
+                        <p class="mb-3">{{ project.company_name or 'N/A' }}</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Project ID</h6>
+                        <p class="mb-3">#{{ project.id }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Project Type</h6>
+                        <p class="mb-3">{{ project.project_type or 'N/A' }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Status</h6>
+                        <span class="badge bg-{{ 'success' if project.project_status == 'Active' else 'warning' }}">
+                            {{ project.project_status or 'Draft' }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">SOW Details</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Start Date</h6>
+                        <p>{{ project.project_start_date.strftime('%b %d, %Y') if project.project_start_date else 'N/A' }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">End Date</h6>
+                        <p>{{ project.estimated_end_date.strftime('%b %d, %Y') if project.estimated_end_date else 'N/A' }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">PO Number</h6>
+                        <p>{{ project.customer_po_number or 'N/A' }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Gross Margin</h6>
+                        <p>{{ project.as_bid_gross_margin or 'N/A' }}%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">Billing Contact</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Contact Name</h6>
+                        <p>{{ project.customer_bill_contact_name or 'N/A' }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Email</h6>
+                        <p>{{ project.customer_bill_contact_email or 'N/A' }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="text-muted mb-1">Phone</h6>
+                        <p>{{ project.customer_bill_contact_phone or 'N/A' }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if project.employee_contractor_details %}
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-light">
+            <h5 class="mb-0">Team Members</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Location</th>
+                            <th>Bill Rate</th>
+                            <th>Cost Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for emp in project.employee_contractor_details %}
+                        <tr>
+                            <td>{{ emp.employee_name or emp.employee_email }}</td>
+                            <td>{{ emp.tsheet_service_name or 'N/A' }}</td>
+                            <td>{{ emp.onshore_offshore or 'N/A' }}</td>
+                            <td>{{ "${:,.2f}".format(emp.bill_rate|float) if emp.bill_rate and emp.bill_rate != 'N/A' else 'N/A' }}</td>
+                            <td>{{ "${:,.2f}".format(emp.cost_rate|float) if emp.cost_rate and emp.cost_rate != 'N/A' else 'N/A' }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if project.fixed_price_details %}
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-light">
+            <h5 class="mb-0">Fixed Price Items</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th class="text-end">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in project.fixed_price_details %}
+                        <tr>
+                            <td>{{ item.description }}</td>
+                            <td class="text-end">{{ "${:,.2f}".format(item.amount|float) if item.amount and item.amount != 'N/A' else 'N/A' }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="d-flex justify-content-between mt-4">
+        <a href="{{ url_for('utilities.project_setup') }}" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left"></i> Back to Form
+        </a>
+        <div>
+            <small class="text-muted">
+                Submitted by: {{ project.submitted_by or 'System' }} on 
+                {{ project.created_at.strftime('%b %d, %Y %I:%M %p') if project.created_at else 'N/A' }}
+            </small>
+        </div>
+    </div>
+</div>
+
+<style>
+    @media print {
+        .no-print {
+            display: none !important;
+        }
+        body {
+            padding: 20px;
+            font-size: 12px;
+        }
+        .card {
+            border: 1px solid #dee2e6;
+            margin-bottom: 20px;
+            break-inside: avoid;
+        }
+        .table {
+            font-size: 11px;
+        }
+    }
+</style>
+{% endblock %}

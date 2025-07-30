@@ -1,0 +1,533 @@
+{# templates/index.html #}
+{% extends "base.html" %}
+
+{% block title %}Resource Management View - Search{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Resource Search</h2>
+
+    {# Assign an ID to the form so we can reference it in JavaScript #}
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            {# The form submits to index for the initial search #}
+            <form id="search-form" method="POST" action="{{ url_for('index') }}">
+                <input type="hidden" name="search_type" id="current-search-type" value="{{ search_criteria.get('search_type', 'skill') }}">
+
+                <div class="mb-3">
+                    <label class="form-label d-block fw-bold">Select Search Type:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="search_type_radio" id="search-type-skill" value="skill" {% if search_criteria.get('search_type', 'skill') == 'skill' %}checked{% endif %}>
+                        <label class="form-check-label" for="search-type-skill">Search by Skills</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="search_type_radio" id="search-type-employee" value="employee" {% if search_criteria.get('search_type') == 'employee' %}checked{% endif %}>
+                        <label class="form-check-label" for="search-type-employee">Search by Employee</label>
+                    </div>
+                     <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="search_type_radio" id="search-type-project" value="project" {% if search_criteria.get('search_type') == 'project' %}checked{% endif %}>
+                        <label class="form-check-label" for="search-type-project">Search by Project Requirements</label>
+                    </div>
+                </div>
+
+                <hr class="mb-4">
+
+                <div id="skill-search-form" class="search-form-section card card-body border border-primary mb-3">
+                     <h4 class="card-title text-primary">Search by Skills</h4>
+                     <div class="row mb-3">
+                         <div class="col-md-4">
+                            <label for="project_start_date_skill" class="form-label fw-bold">Allocation As of Date (for Employee Allocation Check)</label>
+                             <input type="date" class="form-control" id="project_start_date_skill" name="project_start_date_skill" value="{{ search_criteria.get('project_start_date_skill') or '' }}" required>
+                         </div>
+                     </div>
+                      <div class="row g-3">
+                         <div class="col-md-6 mb-3">
+                             <label for="skill1" class="form-label fw-bold">Skill 1</label>
+                             <select class="form-select" id="skill1" name="skill1" required>
+                                 <option value="">-- Select Skill --</option>
+                                 {% for skill in skills %}
+                                     <option value="{{ skill.id }}" {% if search_criteria.get('skill1_id') == skill.id %}selected{% endif %}>{{ skill.name }}</option>
+                                 {% endfor %}
+                             </select>
+                         </div>
+                         <div class="col-md-6 mb-3">
+                             <label for="proficiency1" class="form-label fw-bold">Minimum Proficiency for Skill 1 (Optional)</label>
+                             <select class="form-select" id="proficiency1" name="proficiency1">
+                                 <option value="">Any Proficiency</option>
+                                 {% for prof in proficiency_choices %}
+                                     <option value="{{ prof }}" {% if search_criteria.get('proficiency1') == prof %}selected{% endif %}>{{ prof }}</option>
+                                 {% endfor %}
+                             </select>
+                         </div>
+                     </div>
+                     <div class="row g-3">
+                          <div class="col-md-6 mb-3">
+                             <label for="skill2" class="form-label fw-bold">Skill 2 (Optional)</label>
+                             <select class="form-select" id="skill2" name="skill2">
+                                 <option value="">-- Select Skill --</option>
+                                 {% for skill in skills %}
+                                     <option value="{{ skill.id }}" {% if search_criteria.get('skill2_id') == skill.id %}selected{% endif %}>{{ skill.name }}</option>
+                                 {% endfor %}
+                             </select>
+                         </div>
+                         <div class="col-md-6 mb-3">
+                             <label for="proficiency2" class="form-label fw-bold">Minimum Proficiency for Skill 2 (Optional)</label>
+                             <select class="form-select" id="proficiency2" name="proficiency2">
+                                 <option value="">Any Proficiency</option>
+                                  {% for prof in proficiency_choices %}
+                                     <option value="{{ prof }}" {% if search_criteria.get('proficiency2') == prof %}selected{% endif %}>{{ prof }}</option>
+                                 {% endfor %}
+                             </select>
+                         </div>
+                     </div>
+                </div>
+
+                 <div id="employee-search-form" class="search-form-section card card-body border border-success mb-3">
+                      <h4 class="card-title text-success">Search by Employee</h4>
+                       <div class="mb-3">
+                            <label for="search_employee_id" class="form-label fw-bold">Select Employee</label>
+                            <select class="form-select" id="search_employee_id" name="search_employee_id" required>
+                                <option value="">-- Select Employee --</option>
+                                {% for employee in employees %}
+                                    <option value="{{ employee.id }}" {% if search_criteria.get('search_employee_id') == employee.id %}selected{% endif %}>{{ employee.name }}</option>
+                                {% endfor %}
+                            </select>
+                       </div>
+                       <div class="row mb-3">
+                           <div class="col-md-4">
+                                <label for="allocation_as_of_date_employee" class="form-label fw-bold">Allocation As of Date</label>
+                                <input type="date" class="form-control" id="allocation_as_of_date_employee" name="allocation_as_of_date_employee" value="{{ search_criteria.get('allocation_as_of_date_employee') or '' }}" required>
+                           </div>
+                       </div>
+                 </div>
+
+                 <div id="project-search-form" class="search-form-section card card-body border border-info mb-3">
+                      <h4 class="card-title text-info">Search by Project Requirements</h4>
+                       <div class="mb-3">
+                            <label for="search_project_id" class="form-label fw-bold">Select Project</label>
+                            <select class="form-select" id="search_project_id" name="search_project_id" required>
+                                <option value="">-- Select Project --</option>
+                                {% for project in projects %}
+                                    <option value="{{ project.id }}" {% if search_criteria.get('search_project_id') == project.id %}selected{% endif %}>{{ project.name }}</option>
+                                {% endfor %}
+                            </select>
+                       </div>
+                 </div>
+
+                 {# Use type="submit" for the primary search button #}
+                 <button type="submit" class="btn btn-primary btn-lg" id="search-button">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mt-4">
+         <div class="card-body bg-light-subtle">
+             <h3>Search Results</h3>
+
+             {# Wrap action buttons in a div outside the form #}
+             {# These buttons are only shown if a search was performed and results were displayed #}
+             <div id="search-results-actions" class="mb-3">
+                 {# Only show these buttons if results list is populated OR if project search returned a project object #}
+                 {% if results or (search_criteria.get('search_type') == 'project' and selected_project_with_skills) %}
+                     {% if current_user.is_authenticated %}
+                         {# Add IDs to the buttons, use type="button" as JS handles submission #}
+                         <button type="button" class="btn btn-success btn-sm me-2" id="export-excel-button"><i class="bi bi-file-earmark-excel"></i> Export to Excel</button>
+                         <button type="button" class="btn btn-info btn-sm" id="email-report-button"><i class="bi bi-envelope"></i> Email Report to Me</button>
+
+                         {# Add a hidden input for recipient email, tied to the form by ID #}
+                         <input type="hidden" name="recipient_email" form="search-form" value="{{ current_user.email }}">
+
+                     {% endif %}
+                 {# Else condition for search-results-actions if no results/project were found #}
+                 {% else %}
+                     {# No action buttons displayed if no results were found for export/email #}
+                 {% endif %}
+             </div>
+
+
+             <div id="search-results-content">
+
+                 {% if search_criteria.get('search_type') in ['skill', 'employee'] %}
+                     {# Display employee allocation results table #}
+                     {% if results %}
+                         <p>Found {{ results | length }} matching employees.</p>
+
+                         <div class="table-responsive">
+                             <table class="table table-striped table-hover table-sm table-bordered">
+                                 <thead>
+                                     <tr>
+                                         <th>Employee Name</th>
+                                         <th>Email</th>
+                                         {% for key, header in allocation_date_headers.items() %}
+                                             <th>{{ header }}</th>
+                                         {% endfor %}
+                                     </tr>
+                                 </thead>
+                                 <tbody>
+                                     {% for item in results %}
+                                     <tr>
+                                         <td>{{ item.employee.name }}</td>
+                                         <td>{{ item.employee.email or 'N/A' }}</td>
+                                         {% for key in allocation_date_headers.keys() %}
+                                             <td class="text-end">{{ item.allocations.get(key, 'N/A') }}%</td>
+                                         {% endfor %}
+                                     </tr>
+                                     {% if search_criteria.get('search_type') == 'employee' and item.detailed_allocations %}
+                                         <tr>
+                                             <td colspan="{{ 2 + allocation_date_headers|length }}">
+                                                 <small><strong>Detailed Allocations:</strong><br>
+                                                 {% for alloc in item.detailed_allocations %}
+                                                      {{ alloc.project.name }}: {{ alloc.billable_allocation_percentage }}% ({{ alloc.start_date | default('N/A') | format_date }} to {{ alloc.end_date | default('N/A') | format_date }}){% if not loop.last %}<br>{% endif %}
+                                                 {% else %}
+                                                     No detailed allocations recorded.
+                                                 {% endfor %}
+                                                 </small>
+                                             </td>
+                                         </tr>
+                                     {% endif %}
+                                     {% endfor %}
+                                 </tbody>
+                             </table>
+                         </div>
+
+                     {% else %}
+                         {# Message when search performed but no active employees found #}
+                         <p>No active employees found matching the criteria.</p>
+                     {% endif %}
+
+                 {% elif search_criteria.get('search_type') == 'project' %}
+                      {# Display project skill requirements if a project was selected and loaded #}
+                      {% if selected_project_with_skills %}
+                           <h4>Required Skills for "{{ selected_project_with_skills.name }}"</h4>
+
+                           {# Use the Project.skill_requirements relationship, assuming it exists and is loaded #}
+                           {# Use | default([]) for robustness if the relationship is not loaded or empty #}
+                           {% set all_skills = selected_project_with_skills.skill_requirements | default([]) %}
+
+                           {% set must_skills = all_skills | selectattr('requirement_type', 'equalto', 'Must') | list %}
+                           {% set good_to_have_skills = all_skills | selectattr('requirement_type', 'equalto', 'Good to have') | list %}
+
+
+                           {% if must_skills or good_to_have_skills %}
+                               <h4>Must Skills:</h4>
+                               {% if must_skills %}
+                                   <ul class="list-group mb-3">
+                                       {% for req in must_skills | sort(attribute='skill.name') %}
+                                           <li class="list-group-item list-group-item-primary d-flex justify-content-between align-items-center">
+                                               {{ req.skill.name if req.skill else 'Unknown Skill' }}
+                                               <span class="badge project-proficiency-badge">{{ req.proficiency if req.proficiency else 'N/A' }}</span>
+                                           </li>
+                                       {% endfor %}
+                                   </ul>
+                               {% else %}
+                                    <p>No 'Must Have' skills specified for this project.</p>
+                               {% endif %}
+
+                               <h4>Good to have skills:</h4>
+                               {% if good_to_have_skills %}
+                                    <ul class="list-group mb-3">
+                                        {% for req in good_to_have_skills | sort(attribute='skill.name') %}
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                {{ req.skill.name if req.skill else 'Unknown Skill' }}
+                                                <span class="badge project-proficiency-badge">{{ req.proficiency if req.proficiency else 'N/A' }}</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                               {% else %}
+                                     <p>No 'Good to Have' skills specified for this project.</p>
+                               {% endif %}
+
+                           {% else %}
+                                {# Message when project found but has no skill requirements defined #}
+                                <p>No skill requirements defined for this project.</p>
+                           {% endif %}
+                           {% if current_user.is_admin %}
+                                <p class="mt-3">
+                                   <a href="{{ url_for('manage_project_skills', project_id=selected_project_with_skills.id) }}" class="btn btn-secondary btn-sm">Manage Project Skills</a>
+                                </p>
+                           {% endif %}
+                      {% else %}
+                          {# Message when project search performed but project wasn't found or loaded #}
+                          <p>Project not found or could not load skill requirements.</p>
+                      {% endif %}
+
+
+                 {# Default message when no search has been performed #}
+                 {% else %}
+                     <p>Select a search type and criteria above to see results.</p>
+                 {% endif %}
+
+             </div>
+
+         </div>
+    </div>
+
+</div>
+
+{# --- JavaScript for form toggling and export/email submission --- #}
+{% block scripts %}
+    {{ super() }}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get references to elements
+            const searchForm = document.getElementById('search-form'); // Get the main form
+            const searchButton = document.getElementById('search-button'); // Get the Search button
+            const exportExcelButton = document.getElementById('export-excel-button'); // Get the Export button
+            const emailReportButton = document.getElementById('email-report-button'); // Get the Email button
+
+            const skillForm = document.getElementById('skill-search-form');
+            const employeeForm = document.getElementById('employee-search-form');
+            const projectForm = document.getElementById('project-search-form');
+            const searchTypeRadios = document.querySelectorAll('input[name="search_type_radio"]');
+            const currentSearchTypeHidden = document.getElementById('current-search-type');
+            const formSections = document.querySelectorAll('.search-form-section');
+            const resultsContentArea = document.getElementById('search-results-content');
+
+
+            // Function to toggle form sections and manage 'required' attributes
+            function toggleForms() {
+                const selectedType = document.querySelector('input[name="search_type_radio"]:checked').value;
+
+                // Clear previous results display when changing search type
+                resultsContentArea.innerHTML = '<p>Select a search type and criteria above to see results.</p>';
+
+                formSections.forEach(section => {
+                    const expectedId = selectedType + '-search-form';
+
+                    if (section.id === expectedId) {
+                        section.style.display = 'block';
+                         section.querySelectorAll('input[data-originally-required="true"], select[data-originally-required="true"]').forEach(input => {
+                           input.setAttribute('required', 'required');
+                           input.removeAttribute('data-originally-required'); // Clean up the data attribute
+                         });
+
+                    } else {
+                        section.style.display = 'none';
+                         section.querySelectorAll('input[required], select[required]').forEach(input => {
+                           if (!input.hasAttribute('data-originally-required')) {
+                                input.setAttribute('data-originally-required', 'true');
+                           }
+                           input.removeAttribute('required');
+                         });
+                    }
+                });
+
+                // Update the value of the hidden input field
+                currentSearchTypeHidden.value = selectedType;
+            }
+
+             // Store originally required attributes on page load
+             formSections.forEach(section => {
+                 section.querySelectorAll('input[required], select[required]').forEach(input => {
+                     input.setAttribute('data-originally-required', 'true');
+                 });
+             });
+
+            // Add event listeners to the radio buttons
+            searchTypeRadios.forEach(radio => {
+                radio.addEventListener('change', toggleForms);
+            });
+
+
+            // --- Handle Search, Export, and Email Button Clicks ---
+
+            // Add event listener for the main Search button (already type="submit")
+            // It will submit the form to its default action (url_for('index'))
+            searchButton.addEventListener('click', function(event) {
+                 // Optional: client-side validation check before submitting to index?
+                 // Browser's built-in validation for 'required' will trigger first.
+            });
+
+
+            // Add event listener for the Export button
+            if (exportExcelButton) { // Check if button exists (only visible if results are shown)
+                 exportExcelButton.addEventListener('click', function(event) {
+                     event.preventDefault(); // Prevent default button action
+
+                     // Temporarily store the original form action
+                     const originalAction = searchForm.action;
+                     const originalMethod = searchForm.method; // Store original method too
+
+                     // Set the form's action and method for export
+                     searchForm.action = "{{ url_for('export_results') }}";
+                     searchForm.method = "POST";
+
+                     // Submit the form
+                     searchForm.submit();
+
+                     // Reset the form action and method after submission (good practice)
+                     // Use a timeout to allow submission to complete
+                     setTimeout(() => {
+                         searchForm.action = originalAction;
+                         searchForm.method = originalMethod;
+                     }, 100); // Reset after a short delay
+                 });
+             }
+
+            // Add event listener for the Email button
+            if (emailReportButton) { // Check if button exists
+                 emailReportButton.addEventListener('click', function(event) {
+                     event.preventDefault(); // Prevent default button action
+
+                     // Optional: Add client-side confirmation
+                     const recipientEmailInput = searchForm.querySelector('input[name="recipient_email"]'); // Find the hidden input
+                     let confirmSend = true; // Assume yes if no input or confirmation skipped
+                     if (recipientEmailInput) {
+                         // Basic check if email input is empty before confirming
+                         if (recipientEmailInput.value.trim() === '') {
+                             alert("Recipient email is required before sending the report.");
+                             return; // Stop if email is empty
+                         }
+                         confirmSend = confirm('Send report to ' + recipientEmailInput.value + '?');
+                     } else {
+                          // Fallback if hidden input wasn't found
+                          confirmSend = confirm('Send report via email?');
+                     }
+
+
+                     if (!confirmSend) {
+                         return; // Stop if user cancels
+                     }
+
+                     // Temporarily store the original form action and method
+                     const originalAction = searchForm.action;
+                     const originalMethod = searchForm.method; // Store original method too
+
+
+                     // Set the form's action and method for email
+                     searchForm.action = "{{ url_for('email_report') }}";
+                     searchForm.method = "POST"; // Ensure method is POST
+
+                     // Submit the form
+                     searchForm.submit();
+
+                     // Reset the form action and method after submission (good practice)
+                     // Use a timeout to allow submission to complete
+                     setTimeout(() => {
+                         searchForm.action = originalAction;
+                         searchForm.method = originalMethod;
+                     }, 100); // Reset after a short delay
+                 });
+             }
+
+
+            // --- Initial Setup on Page Load ---
+
+            // Determine initial form visibility and 'required' attributes based on Flask-rendered criteria
+            // Check if there's anything other than the default paragraph in results area
+            const hasInitialResults = resultsContentArea.children.length > 1 || (resultsContentArea.children.length === 1 && resultsContentArea.children[0].tagName.toLowerCase() !== 'p');
+
+            if (!hasInitialResults) {
+                 // If no results were rendered by Flask, just set initial form visibility
+                 toggleForms(); // This will also set the default "Select a search type..." message
+            } else {
+                 // If results WERE rendered by Flask (e.g., after a successful POST),
+                 // just set form visibility based on the current search type without clearing results.
+                 // We need to re-apply 'required' based on the active form section.
+                 const selectedType = currentSearchTypeHidden.value;
+                  formSections.forEach(section => {
+                     const expectedId = selectedType + '-search-form';
+                     if (section.id === expectedId) {
+                         section.style.display = 'block';
+                          section.querySelectorAll('input[data-originally-required="true"], select[data-originally-required="true"]').forEach(input => {
+                           input.setAttribute('required', 'required');
+                           // Optionally remove the data attribute after restoring required
+                           // input.removeAttribute('data-originally-required');
+                         });
+                     } else {
+                         section.style.display = 'none';
+                          section.querySelectorAll('input[required], select[required]').forEach(input => {
+                            if (!input.hasAttribute('data-originally-required')) {
+                                 input.setAttribute('data-originally-required', 'true');
+                            }
+                            input.removeAttribute('required');
+                         });
+                     }
+                 });
+                 // currentSearchTypeHidden.value is already set by Flask
+
+                 // Add the change listener AFTER setting the initial state
+                 searchTypeRadios.forEach(radio => {
+                     radio.addEventListener('change', toggleForms);
+                 });
+            }
+        });
+    </script>
+{% endblock %}
+<div class="container mt-4">
+    <h1>Dashboard</h1>
+    
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Total Projects</h5>
+                    <h2>{{ total_projects }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Active Employees</h5>
+                    <h2>{{ active_employees }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Active Allocations</h5>
+                    <h2>{{ active_allocations }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Recent Projects -->
+    <div class="card">
+        <div class="card-header">
+            <h5>Recent Projects</h5>
+        </div>
+        <div class="card-body">
+            {% if recent_projects %}
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Service Line</th>
+                            <th>Start Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for project in recent_projects %}
+                        <tr>
+                            <td>
+                                <a href="{{ url_for('combined_project_view', project_id=project.id) }}">
+                                    {{ project.name }}
+                                </a>
+                            </td>
+                            <td>{{ project.service_line or 'N/A' }}</td>
+                            <td>{{ project.sow_start_date|format_date if project.sow_start_date else 'N/A' }}</td>
+                            <td>
+                                {% if project.actual_end_date and project.actual_end_date < now.date() %}
+                                    <span class="badge bg-secondary">Completed</span>
+                                {% else %}
+                                    <span class="badge bg-success">Active</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <p class="text-muted">No projects found.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,2788 @@
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+'C:\apps\resource_planner_web\run_flask_app.bat' is not recognized as an internal or external command,
+operable program or batch file.
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+^CTraceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 48, in <module>
+    from reports.views import reports_bp
+  File "C:\apps\resource_planner_web\reports\__init__.py", line 1, in <module>
+    from .views import reports_bp
+  File "C:\apps\resource_planner_web\reports\views.py", line 5, in <module>
+    from models import db, EmployeeMonthlyUtilization  # <-- Import your new model here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'EmployeeMonthlyUtilization' from 'models' (C:\apps\resource_planner_web\models.py)
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 48, in <module>
+    from reports.views import reports_bp
+  File "C:\apps\resource_planner_web\reports\__init__.py", line 1, in <module>
+    from .views import reports_bp
+  File "C:\apps\resource_planner_web\reports\views.py", line 5, in <module>
+    from models import db, EmployeeMonthlyUtilization  # <-- Import your new model here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'EmployeeMonthlyUtilization' from 'models' (C:\apps\resource_planner_web\models.py)
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 48, in <module>
+    from reports.views import reports_bp
+  File "C:\apps\resource_planner_web\reports\__init__.py", line 1, in <module>
+    from .views import reports_bp
+  File "C:\apps\resource_planner_web\reports\views.py", line 5, in <module>
+    from models import db, EmployeeMonthlyUtilization  # <-- Import your new model here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'EmployeeMonthlyUtilization' from 'models' (C:\apps\resource_planner_web\models.py)
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 48, in <module>
+    from reports.views import reports_bp
+  File "C:\apps\resource_planner_web\reports\__init__.py", line 1, in <module>
+    from .views import reports_bp
+  File "C:\apps\resource_planner_web\reports\views.py", line 5, in <module>
+    from models import db, EmployeeMonthlyUtilization  # <-- Import your new model here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'EmployeeMonthlyUtilization' from 'models' (C:\apps\resource_planner_web\models.py)
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 48, in <module>
+    from reports.views import reports_bp
+  File "C:\apps\resource_planner_web\reports\__init__.py", line 1, in <module>
+    from .views import reports_bp
+  File "C:\apps\resource_planner_web\reports\views.py", line 5, in <module>
+    from models import db, EmployeeMonthlyUtilization  # <-- Import your new model here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'EmployeeMonthlyUtilization' from 'models' (C:\apps\resource_planner_web\models.py)
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 48, in <module>
+    from reports.views import reports_bp
+  File "C:\apps\resource_planner_web\reports\__init__.py", line 1, in <module>
+    from .views import reports_bp
+  File "C:\apps\resource_planner_web\reports\views.py", line 5, in <module>
+    from models import db, EmployeeMonthlyUtilization  # <-- Import your new model here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'EmployeeMonthlyUtilization' from 'models' (C:\apps\resource_planner_web\models.py)
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 48, in <module>
+    from reports.views import reports_bp
+  File "C:\apps\resource_planner_web\reports\__init__.py", line 1, in <module>
+    from .views import reports_bp
+  File "C:\apps\resource_planner_web\reports\views.py", line 5, in <module>
+    from models import db, EmployeeMonthlyUtilization  # <-- Import your new model here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'EmployeeMonthlyUtilization' from 'models' (C:\apps\resource_planner_web\models.py)
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 48, in <module>
+    from reports.views import reports_bp
+  File "C:\apps\resource_planner_web\reports\__init__.py", line 1, in <module>
+    from .views import reports_bp
+  File "C:\apps\resource_planner_web\reports\views.py", line 5, in <module>
+    from models import db, EmployeeMonthlyUtilization  # <-- Import your new model here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'EmployeeMonthlyUtilization' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'app'
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ImportError: cannot import name 'TimesheetUpload' from 'models' (C:\apps\resource_planner_web\models.py)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+ModuleNotFoundError: No module named 'models'
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 382, in <module>
+    @event.listens_for(Employee, 'before_compile', retval=True)
+     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 167, in decorate
+    listen(target, identifier, fn, *args, **kw)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 123, in listen
+    _event_key(target, identifier, fn).listen(*args, **kw)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\sqlalchemy\event\api.py", line 36, in _event_key
+    raise exc.InvalidRequestError(
+        "No such event '%s' for target '%s'" % (identifier, target)
+    )
+sqlalchemy.exc.InvalidRequestError: No such event 'before_compile' for target '<class 'models.Employee'>'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from app import app; app.run(host='0.0.0.0', port=5000)
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 15, in <module>
+    from models import TimesheetUpload, Project, Employee
+  File "C:\apps\resource_planner_web\models.py", line 21
+    [Previous User Model content remains the same until Employee Model]
+     ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+172.31.157.195 - - [27/Jul/2025 14:49:22] "GET / HTTP/1.1" 302 -
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+172.31.137.237 - - [27/Jul/2025 14:49:39] "GET / HTTP/1.1" 302 -
+172.31.137.237 - - [27/Jul/2025 14:49:40] "GET /login?next=/ HTTP/1.1" 200 -
+172.31.137.237 - - [27/Jul/2025 14:49:40] "GET /static/css/style.css HTTP/1.1" 304 -
+172.31.137.237 - - [27/Jul/2025 14:49:40] "GET /static/images/clovertex_logo.png HTTP/1.1" 304 -
+172.31.137.237 - - [27/Jul/2025 14:49:43] "POST /login HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 14:49:43] "GET / HTTP/1.1" 302 -
+[2025-07-27 14:49:43,896] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\app.py", line 362, in index
+    results=results,
+            ^^^^^^^
+UnboundLocalError: cannot access local variable 'results' where it is not associated with a value
+172.31.137.237 - - [27/Jul/2025 14:49:43] "GET / HTTP/1.1" 500 -
+172.31.157.195 - - [27/Jul/2025 14:49:52] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 14:50:13] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 14:50:22] "GET / HTTP/1.1" 302 -
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+172.31.142.133 - - [27/Jul/2025 15:09:44] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:09:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:10:14] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:10:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:10:44] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:10:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:11:14] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:11:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:11:44] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:11:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:12:14] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:12:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:12:44] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:12:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:13:14] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:13:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:13:44] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:13:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:14:14] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:14:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:14:44] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:14:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:15:14] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:15:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:15:44] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:15:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:16:14] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:16:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:16:44] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:16:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:17:14] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:17:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:17:45] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:17:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:18:15] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:18:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:18:45] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:18:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:19:15] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:19:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:19:45] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:19:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:20:15] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:20:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:20:45] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:20:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:21:15] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:21:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:21:45] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:21:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:22:15] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:22:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:22:45] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:22:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:23:15] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:23:23] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:23:45] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:23:53] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:24:15] "GET / HTTP/1.1" 302 -
+172.31.157.195 - - [27/Jul/2025 15:24:24] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [27/Jul/2025 15:24:45] "GET / HTTP/1.1" 302 -
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+Press CTRL+C to quit
+172.31.142.133 - - [28/Jul/2025 02:50:49] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:51:19] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:51:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:51:49] "GET / HTTP/1.1" 302 -
+172.31.137.237 - - [28/Jul/2025 02:52:06] "GET / HTTP/1.1" 302 -
+172.31.137.237 - - [28/Jul/2025 02:52:06] "GET /login?next=/ HTTP/1.1" 200 -
+172.31.137.237 - - [28/Jul/2025 02:52:06] "GET /static/images/clovertex_logo.png HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:52:06] "GET /static/css/style.css HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:52:06] "GET /favicon.ico HTTP/1.1" 404 -
+172.31.137.237 - - [28/Jul/2025 02:52:11] "POST /login HTTP/1.1" 302 -
+172.31.137.237 - - [28/Jul/2025 02:52:12] "GET / HTTP/1.1" 200 -
+172.31.137.237 - - [28/Jul/2025 02:52:12] "GET /static/css/style.css HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:52:12] "GET /static/images/clovertex_logo.png HTTP/1.1" 304 -
+172.31.159.254 - - [28/Jul/2025 02:52:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:52:19] "GET / HTTP/1.1" 302 -
+172.31.137.237 - - [28/Jul/2025 02:52:29] "GET /reports HTTP/1.1" 200 -
+172.31.137.237 - - [28/Jul/2025 02:52:29] "GET /static/css/style.css HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:52:29] "GET /static/images/clovertex_logo.png HTTP/1.1" 304 -
+[2025-07-28 02:52:31,031] ERROR in app: Exception on /executive-utilization-dashboard [GET]
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\reports\views.py", line 101, in executive_utilization_dashboard
+    print(f"\U0001f50d RECEIVED PARAMETERS: start_month={start_month}, end_month={end_month}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\reports\views.py", line 259, in executive_utilization_dashboard
+    print(f"\u274c Error: {str(e)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+172.31.137.237 - - [28/Jul/2025 02:52:31] "GET /executive-utilization-dashboard HTTP/1.1" 500 -
+[2025-07-28 02:52:38,550] ERROR in app: Exception on /executive-utilization-dashboard [GET]
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\reports\views.py", line 101, in executive_utilization_dashboard
+    print(f"\U0001f50d RECEIVED PARAMETERS: start_month={start_month}, end_month={end_month}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\reports\views.py", line 259, in executive_utilization_dashboard
+    print(f"\u274c Error: {str(e)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+172.31.137.237 - - [28/Jul/2025 02:52:38] "GET /executive-utilization-dashboard HTTP/1.1" 500 -
+172.31.159.254 - - [28/Jul/2025 02:52:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:52:49] "GET / HTTP/1.1" 302 -
+172.31.137.237 - - [28/Jul/2025 02:52:52] "GET /reports/utilization_report HTTP/1.1" 200 -
+172.31.137.237 - - [28/Jul/2025 02:52:52] "GET /static/css/style.css HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:52:52] "GET /static/images/clovertex_logo.png HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:52:56] "GET /reports/Projects%20Summary HTTP/1.1" 200 -
+172.31.137.237 - - [28/Jul/2025 02:52:56] "GET /static/css/style.css HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:52:56] "GET /static/images/clovertex_logo.png HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:53:02] "GET /reports/Projects%20Summary HTTP/1.1" 200 -
+172.31.137.237 - - [28/Jul/2025 02:53:02] "GET /static/css/style.css HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:53:02] "GET /static/images/clovertex_logo.png HTTP/1.1" 304 -
+172.31.159.254 - - [28/Jul/2025 02:53:12] "GET / HTTP/1.1" 302 -
+172.31.137.237 - - [28/Jul/2025 02:53:13] "GET /reports HTTP/1.1" 200 -
+172.31.137.237 - - [28/Jul/2025 02:53:13] "GET /static/css/style.css HTTP/1.1" 304 -
+172.31.137.237 - - [28/Jul/2025 02:53:13] "GET /static/images/clovertex_logo.png HTTP/1.1" 304 -
+[2025-07-28 02:53:14,636] ERROR in app: Exception on /executive-utilization-dashboard [GET]
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\reports\views.py", line 101, in executive_utilization_dashboard
+    print(f"\U0001f50d RECEIVED PARAMETERS: start_month={start_month}, end_month={end_month}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\reports\views.py", line 259, in executive_utilization_dashboard
+    print(f"\u274c Error: {str(e)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+172.31.137.237 - - [28/Jul/2025 02:53:14] "GET /executive-utilization-dashboard HTTP/1.1" 500 -
+172.31.142.133 - - [28/Jul/2025 02:53:19] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:53:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:53:49] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:54:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:54:19] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:54:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:54:49] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:55:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:55:19] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:55:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:55:49] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:56:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:56:20] "GET / HTTP/1.1" 302 -
+[2025-07-28 02:56:25,758] ERROR in app: Exception on /executive-utilization-dashboard [GET]
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\reports\views.py", line 101, in executive_utilization_dashboard
+    print(f"\U0001f50d RECEIVED PARAMETERS: start_month={start_month}, end_month={end_month}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\reports\views.py", line 259, in executive_utilization_dashboard
+    print(f"\u274c Error: {str(e)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+172.31.137.237 - - [28/Jul/2025 02:56:25] "GET /executive-utilization-dashboard HTTP/1.1" 500 -
+172.31.159.254 - - [28/Jul/2025 02:56:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:56:50] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:57:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:57:20] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:57:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:57:50] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:58:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:58:20] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:58:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:58:50] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:59:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:59:20] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 02:59:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 02:59:50] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:00:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:00:20] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:00:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:00:50] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:01:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:01:20] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:01:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:01:50] "GET / HTTP/1.1" 302 -
+[2025-07-28 03:02:03,530] ERROR in app: Exception on /executive-utilization-dashboard [GET]
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\reports\views.py", line 101, in executive_utilization_dashboard
+    print(f"\U0001f50d RECEIVED PARAMETERS: start_month={start_month}, end_month={end_month}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\reports\views.py", line 259, in executive_utilization_dashboard
+    print(f"\u274c Error: {str(e)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+172.31.137.237 - - [28/Jul/2025 03:02:03] "GET /executive-utilization-dashboard HTTP/1.1" 500 -
+172.31.159.254 - - [28/Jul/2025 03:02:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:02:20] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:02:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:02:50] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:03:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:03:20] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:03:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:03:50] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:04:12] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:04:20] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:04:42] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:04:50] "GET / HTTP/1.1" 302 -
+172.31.159.254 - - [28/Jul/2025 03:05:13] "GET / HTTP/1.1" 302 -
+172.31.142.133 - - [28/Jul/2025 03:05:20] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 104-078-996
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 104-078-996
+python-dotenv could not parse statement starting at line 11
+python-dotenv could not parse statement starting at line 12
+WARNING:dotenv.main:python-dotenv could not parse statement starting at line 11
+WARNING:dotenv.main:python-dotenv could not parse statement starting at line 12
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.137.237:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:07:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:00] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:00] "GET /login?next=/ HTTP/1.1" 200 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:00] "[36mGET /static/images/clovertex_logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:04] "[36mGET /static/images/clovertex_logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:09] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:09] "[36mGET /static/images/clovertex_logo.png HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /executive-utilization-dashboard [GET]
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\reports\views.py", line 101, in executive_utilization_dashboard
+    print(f"\U0001f50d RECEIVED PARAMETERS: start_month={start_month}, end_month={end_month}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\reports\views.py", line 259, in executive_utilization_dashboard
+    print(f"\u274c Error: {str(e)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+ERROR:app:Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:08:10] "[35m[1mGET /executive-utilization-dashboard HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:08:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:08:20] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:08:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:08:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:09:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:09:20] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:09:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:09:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:10:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:10:20] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:10:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:10:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:11:13] "[32mGET / HTTP/1.1[0m" 302 -
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 104-078-996
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:11:20] "[32mGET / HTTP/1.1[0m" 302 -
+ERROR:app:Exception on /executive-utilization-dashboard [GET]
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\reports\views.py", line 101, in executive_utilization_dashboard
+    print(f"\U0001f50d RECEIVED PARAMETERS: start_month={start_month}, end_month={end_month}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\apps\resource_planner_web\reports\views.py", line 259, in executive_utilization_dashboard
+    print(f"\u274c Error: {str(e)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+ERROR:app:Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+INFO:werkzeug:172.31.137.237 - - [28/Jul/2025 03:11:20] "[35m[1mGET /executive-utilization-dashboard HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:11:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:11:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:12:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:12:20] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:12:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:12:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:13:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:13:20] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:13:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:13:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:14:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:14:20] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:14:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:14:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:15:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:15:20] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:15:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:15:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:16:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:16:20] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:16:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:16:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:17:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.142.133 - - [28/Jul/2025 03:17:20] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.31.159.254 - - [28/Jul/2025 03:17:43] "[32mGET / HTTP/1.1[0m" 302 -

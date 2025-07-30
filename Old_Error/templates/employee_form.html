@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ action }} Employee{% endblock %}
+
+{% block content %}
+ <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+        <div class="card shadow-sm">
+             <div class="card-header d-flex justify-content-between align-items-center">
+                <span><i class="fas fa-user-{% if action == 'Add' %}plus{% else %}edit{% endif %} me-2"></i> {{ action }} Employee</span>
+                <a href="{{ url_for('employees_list') }}" class="btn btn-sm btn-outline-secondary"><i class="fas fa-list me-1"></i> Back to List</a>
+             </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="row">
+                         <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Employee Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name" value="{{ employee.name if employee and employee.name is not none else request.form.get('name', '') }}" required autofocus>
+                        </div>
+                         <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" value="{{ employee.email if employee and employee.email is not none else request.form.get('email', '') }}">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check form-switch">
+                            {# This logic defaults the switch to ON for the "Add" form #}
+                            {# For the "Edit" form, it uses the employee's current status #}
+                            <input class="form-check-input" type="checkbox" role="switch" id="is_active" name="is_active"
+                                   {% if (action == 'Add' and employee is none) or (employee and employee.is_active) %}checked{% endif %}>
+                            <label class="form-check-label" for="is_active">Employee is Active</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Skills and Proficiency</label>
+                         <small class="text-muted d-block mb-2">Select skills and specify proficiency (Basic, Moderate, Advanced).</small>
+                        <div class="skill-checkbox-list p-3 border rounded">
+                            {% if all_skills %}
+                                {% set proficiency_levels = ['Basic', 'Moderate', 'Advanced'] %}
+                                {% for skill in all_skills %}
+                                    <div class="row g-2 mb-2 align-items-center">
+                                        <div class="col-sm-5 col-md-4">
+                                            <div class="form-check">
+                                              <input class="form-check-input skill-checkbox" type="checkbox"
+                                                     value="{{ skill.id }}" id="skill_{{ skill.id }}" name="skill_ids"
+                                                     {% if skill.id in current_proficiencies %}checked{% endif %}
+                                                     data-skill-id="{{ skill.id }}">
+                                              <label class="form-check-label" for="skill_{{ skill.id }}">
+                                                {{ skill.name }}
+                                              </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-7 col-md-8">
+                                             <select class="form-select form-select-sm proficiency-input"
+                                                     id="proficiency_{{ skill.id }}" name="proficiency_{{ skill.id }}"
+                                                     {% if skill.id not in current_proficiencies %}disabled{% endif %}>
+                                                 <option value="">-- Select --</option>
+                                                 {% for level in proficiency_levels %}
+                                                    <option value="{{ level }}"
+                                                            {% if current_proficiencies.get(skill.id) == level %}selected{% endif %}>
+                                                        {{ level }}
+                                                    </option>
+                                                 {% endfor %}
+                                             </select>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="text-muted mb-0">No skills available. <a href="{{ url_for('add_skill') }}">Add one?</a></p>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                     <div class="d-flex justify-content-end">
+                        <a href="{{ url_for('employees_list') }}" class="btn btn-secondary me-2"><i class="fas fa-times me-1"></i> Cancel</a>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save me-1"></i> {{ action }} Employee</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const skillCheckboxes = document.querySelectorAll('.skill-checkbox');
+    skillCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            const skillId = this.dataset.skillId;
+            const proficiencyInput = document.getElementById(`proficiency_${skillId}`);
+            if (proficiencyInput) {
+                proficiencyInput.disabled = !this.checked;
+                if (!this.checked) {
+                    proficiencyInput.value = '';
+                }
+            }
+        });
+        checkbox.dispatchEvent(new Event('change'));
+    });
+});
+</script>
+{% endblock %}

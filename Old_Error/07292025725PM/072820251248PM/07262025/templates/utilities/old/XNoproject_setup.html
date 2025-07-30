@@ -1,0 +1,286 @@
+{% extends "base.html" %}
+{% block title %}Project Setup Form{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4><i class="fas fa-project-diagram"></i> Project Set-Up Form for Quickbooks and Tsheets</h4>
+                </div>
+                <div class="card-body">
+                    <form method="POST" id="projectSetupForm">
+                        
+                        <!-- Section A: Project & Customer Details -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-info text-white">
+                                <h5>Section A. Project & Customer Details</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Company Name *</label>
+                                            <input type="text" class="form-control" name="company_name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Customer Name *</label>
+                                            <input type="text" class="form-control" name="customer_name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Customer Abbreviation</label>
+                                            <input type="text" class="form-control" name="customer_abbreviation">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Project Name for Quickbooks *</label>
+                                            <input type="text" class="form-control" name="project_name_quickbooks" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Customer Address</label>
+                                            <textarea class="form-control" name="customer_address" rows="3"></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Customer Bill-To Contact Name</label>
+                                            <input type="text" class="form-control" name="customer_bill_contact_name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Customer Bill-To Contact Email</label>
+                                            <input type="email" class="form-control" name="customer_bill_contact_email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Customer Bill-To Contact Phone</label>
+                                            <input type="text" class="form-control" name="customer_bill_contact_phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Customer PO Number</label>
+                                            <input type="text" class="form-control" name="customer_po_number">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Project Type</label>
+                                            <select class="form-control" name="project_type">
+                                                <option value="">Select from dropdown</option>
+                                                <option value="Fixed Price">Fixed Price</option>
+                                                <option value="Time & Materials">Time & Materials</option>
+                                                <option value="Managed Service">Managed Service</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Project Start Date</label>
+                                            <input type="date" class="form-control" name="project_start_date">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Estimated Project End Date</label>
+                                            <input type="date" class="form-control" name="estimated_end_date">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Project Status</label>
+                                            <select class="form-control" name="project_status">
+                                                <option value="">Select from dropdown</option>
+                                                <option value="Active">Active</option>
+                                                <option value="On Hold">On Hold</option>
+                                                <option value="Completed">Completed</option>
+                                                <option value="Cancelled">Cancelled</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">As-Bid Gross Margin</label>
+                                            <input type="text" class="form-control" name="as_bid_gross_margin">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Link to Project Estimating Sheet</label>
+                                            <input type="url" class="form-control" name="project_estimating_sheet_link">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section B: Employee/Contractor Details -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-info text-white">
+                                <h5>Section B. Employee/Contractor Details</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="employeeSection">
+                                    <div class="employee-row row mb-3">
+                                        <div class="col-md-3">
+                                            <label class="form-label">Employee Name/Contractor</label>
+                                            <select class="form-control employee-select" name="employee_name[]">
+                                                <option value="">Select Employee</option>
+                                                {% for emp in employees %}
+                                                <option value="{{ emp.email }}" data-name="{{ emp.name }}">{{ emp.name }} ({{ emp.email }})</option>
+                                                {% endfor %}
+                                                <option value="new">+ Add New Employee</option>
+                                            </select>
+                                            <input type="text" class="form-control mt-2 new-employee-name" name="new_employee_name[]" placeholder="New Employee Name" style="display:none;">
+                                            <input type="email" class="form-control mt-2 new-employee-email" name="new_employee_email[]" placeholder="New Employee Email" style="display:none;">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="form-label">Onshore/Offshore</label>
+                                            <select class="form-control" name="onshore_offshore[]">
+                                                <option value="">Select</option>
+                                                <option value="Onshore">Onshore</option>
+                                                <option value="Offshore">Offshore</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Tsheet Service Name</label>
+                                            <input type="text" class="form-control" name="tsheet_service_name[]">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="form-label">Bill Rate/Hr (T&M Projects)</label>
+                                            <input type="number" class="form-control" name="bill_rate[]" step="0.01">
+                                        </div>
+                                        <div class="col-md-1">
+                                            <label class="form-label">Cost Rate/Hr</label>
+                                            <input type="number" class="form-control" name="cost_rate[]" step="0.01">
+                                        </div>
+                                        <div class="col-md-1">
+                                            <label class="form-label">&nbsp;</label>
+                                            <button type="button" class="btn btn-danger btn-sm remove-employee" style="display:none;">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-success btn-sm" id="addEmployee">Add Employee</button>
+                            </div>
+                        </div>
+
+                        <!-- Section C: Fixed Price Details -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-info text-white">
+                                <h5>Section C. Fixed Price & Managed Service Details for Invoice</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="fixedPriceSection">
+                                    <div class="fp-row row mb-3">
+                                        <div class="col-md-8">
+                                            <label class="form-label">Description</label>
+                                            <input type="text" class="form-control" name="fp_description[]">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="form-label">Amount</label>
+                                            <input type="number" class="form-control" name="fp_amount[]" step="0.01">
+                                        </div>
+                                        <div class="col-md-1">
+                                            <label class="form-label">&nbsp;</label>
+                                            <button type="button" class="btn btn-danger btn-sm remove-fp" style="display:none;">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-success btn-sm" id="addFixedPrice">Add Fixed Price Item</button>
+                            </div>
+                        </div>
+
+                        <!-- Email Recipients -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-warning">
+                                <h5>Email Notification</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label class="form-label">Email Recipients (comma-separated) *</label>
+                                    <input type="text" class="form-control" name="email_recipients" 
+                                           value="admin@company.com, pm@company.com, finance@company.com"
+                                           placeholder="email1@company.com, email2@company.com" required>
+                                    <small class="form-text text-muted">Enter email addresses separated by commas</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-eye"></i> Preview Project Setup
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Employee dropdown change handler
+document.addEventListener('change', function(e) {
+    if (e.target.classList.contains('employee-select')) {
+        const row = e.target.closest('.employee-row');
+        const newNameField = row.querySelector('.new-employee-name');
+        const newEmailField = row.querySelector('.new-employee-email');
+        
+        if (e.target.value === 'new') {
+            newNameField.style.display = 'block';
+            newEmailField.style.display = 'block';
+            newNameField.required = true;
+            newEmailField.required = true;
+        } else {
+            newNameField.style.display = 'none';
+            newEmailField.style.display = 'none';
+            newNameField.required = false;
+            newEmailField.required = false;
+        }
+    }
+});
+
+// Add Employee Row
+document.getElementById('addEmployee').addEventListener('click', function() {
+    const section = document.getElementById('employeeSection');
+    const newRow = section.querySelector('.employee-row').cloneNode(true);
+    
+    // Clear values
+    newRow.querySelectorAll('input, select').forEach(input => {
+        input.value = '';
+        if (input.classList.contains('new-employee-name') || input.classList.contains('new-employee-email')) {
+            input.style.display = 'none';
+            input.required = false;
+        }
+    });
+    newRow.querySelector('.remove-employee').style.display = 'inline-block';
+    
+    section.appendChild(newRow);
+    updateRemoveButtons();
+});
+
+// Add Fixed Price Row
+document.getElementById('addFixedPrice').addEventListener('click', function() {
+    const section = document.getElementById('fixedPriceSection');
+    const newRow = section.querySelector('.fp-row').cloneNode(true);
+    
+    // Clear values
+    newRow.querySelectorAll('input').forEach(input => input.value = '');
+    newRow.querySelector('.remove-fp').style.display = 'inline-block';
+    
+    section.appendChild(newRow);
+    updateRemoveButtons();
+});
+
+// Remove row functionality
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('remove-employee')) {
+        e.target.closest('.employee-row').remove();
+        updateRemoveButtons();
+    }
+    if (e.target.classList.contains('remove-fp')) {
+        e.target.closest('.fp-row').remove();
+        updateRemoveButtons();
+    }
+});
+
+function updateRemoveButtons() {
+    const employeeRows = document.querySelectorAll('.employee-row');
+    const fpRows = document.querySelectorAll('.fp-row');
+    
+    employeeRows.forEach((row, index) => {
+        const removeBtn = row.querySelector('.remove-employee');
+        removeBtn.style.display = employeeRows.length > 1 ? 'inline-block' : 'none';
+    });
+    
+    fpRows.forEach((row, index) => {
+        const removeBtn = row.querySelector('.remove-fp');
+        removeBtn.style.display = fpRows.length > 1 ? 'inline-block' : 'none';
+    });
+}
+</script>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block title %}Employee Allocation Forecast{% endblock %}
+{% block content %}
+
+<div class="container mt-4">
+    <h2>
+        Employee Allocation Forecast
+        <small class="text-muted">
+            ({{ "SOW" if allocation_type == "sow" else "Actual" }} Allocation Based)
+        </small>
+    </h2>
+    <form method="get" class="mb-3 d-flex flex-wrap align-items-center gap-3">
+        <label>
+            Allocation Type:
+            <select name="allocation_type" onchange="this.form.submit()">
+                <option value="sow" {% if allocation_type == 'sow' %}selected{% endif %}>SOW Allocation Based Forecast</option>
+                <option value="actual" {% if allocation_type == 'actual' %}selected{% endif %}>Actual Allocation Based Forecast</option>
+            </select>
+        </label>
+        <label>
+            View:
+            <select name="period_filter" onchange="this.form.submit()">
+			  <option value="ytd" {% if period_filter == 'ytd' %}selected{% endif %}>Year-To-Date (YTD)</option>
+			  <option value="future" {% if period_filter == 'future' %}selected{% endif %}>Current + Future Months (Forecast)</option>
+			  <option value="past" {% if period_filter == 'past' %}selected{% endif %}>Past + Current Months</option>
+			  <option value="all" {% if period_filter == 'all' %}selected{% endif %}>All Months</option>
+			</select>
+        </label>
+        <label>
+            Start Month:
+            <input type="month" name="start_month" value="{{ request.args.get('start_month', '') }}">
+        </label>
+        <label>
+            End Month:
+            <input type="month" name="end_month" value="{{ request.args.get('end_month', '') }}">
+        </label>
+        <button type="submit" class="btn btn-primary btn-sm">Apply</button>
+    </form>
+	<div class="mb-3">
+    <a href="{{ url_for('reports.allocation_matrix_excel', **request.args) }}" class="btn btn-success btn-sm">
+        <i class="fas fa-file-excel"></i> Export to Excel
+    </a>
+    <a href="{{ url_for('reports.allocation_matrix_email', **request.args) }}" class="btn btn-info btn-sm">
+        <i class="fas fa-envelope"></i> Email Report to Me
+    </a>
+	</div>
+	<div class="table-responsive">
+        <table class="table table-bordered table-sm align-middle">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Service Line</th>
+                    {% for m in months %}
+                        <th>{{ m }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for emp in employees %}
+                <tr>
+                    <td>{{ emp.name }}</td>
+                    <td>{{ emp.service_line }}</td>
+                    {% for row in matrix[emp.id]['rows'] %}
+                    <td>
+                        {% for proj, pct in row.projects %}
+                            <div>{{ proj }}: {{ pct }}%</div>
+                        {% endfor %}
+                        <div style="color:green;">Total Utilized: {{ row.total_utilized }}%</div>
+                        <div style="color:red;">Total Available: {{ row.total_available }}%</div>
+                    </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

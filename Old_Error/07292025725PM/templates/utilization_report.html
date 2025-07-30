@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Monthly Utilization Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.min.css">
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.min.js"></script>
+    <style>
+        .header-logo {
+            height: 48px;
+            margin-right: 15px;
+        }
+        .header-row {
+            background: #0d6efd;
+            color: #fff;
+        }
+        .table-bordered th, .table-bordered td {
+            border: 1px solid #dee2e6 !important;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-4">
+    <div class="d-flex align-items-center mb-3">
+        <img src="{{ url_for('static', filename='images/clovertex_logo.png') }}" class="header-logo" alt="Logo">
+        <h2 class="mb-0">Employee Monthly Utilization Report</h2>
+    </div>
+    <table id="utilTable" class="table table-bordered table-hover">
+        <thead>
+            <tr class="header-row">
+                <th>Employee Name</th>
+                <th>Service Line</th>
+                <th>Month</th>
+                <th>Billable Hours</th>
+                <th>Billable %</th>
+                <th>Non-Billable Hours</th>
+                <th>Non-Billable %</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ emp_map[row.employee_id] if row.employee_id in emp_map else row.employee_id }}</td>
+                <td>{{ row.service_line }}</td>
+                <td>{{ row.month }}</td>
+                <td>{{ row.billable_hours }}</td>
+                <td>{{ row.billable_percent }}</td>
+                <td>{{ row.non_billable_hours }}</td>
+                <td>{{ row.non_billable_percent }}</td>
+                <td>{{ row.location }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#utilTable').DataTable({
+            order: [],
+            paging: false,
+            info: false,
+            searching: false
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Combined Project View</h2>
+    
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4>Project Information</h4>
+        </div>
+        <div class="card-body">
+            <pre>{{ project_data|tojson(indent=4) }}</pre>
+        </div>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4>Team Members</h4>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Designation</th>
+                        <th>Allocation %</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for member in project_data.team_members %}
+                    <tr>
+                        <td>{{ member.name }}</td>
+                        <td>{{ member.email }}</td>
+                        <td>{{ member.designation }}</td>
+                        <td>{{ member.allocation_percentage }}%</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    {% if project_data.fixed_price_items %}
+    <div class="card">
+        <div class="card-header">
+            <h4>Fixed Price Items</h4>
+        </div>
+        <div class="card-body">
+            <ul>
+                {% for item in project_data.fixed_price_items %}
+                <li>{{ item.description }}: ${{ "%.2f"|format(item.amount) }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

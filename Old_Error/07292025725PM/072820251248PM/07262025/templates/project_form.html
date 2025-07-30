@@ -1,0 +1,68 @@
+{# templates/project_form.html #}
+{% extends "base.html" %}
+{% block title %}{{ action }} Project{% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <h2>{{ action }} Project{% if action == 'Edit' %}: "{{ project.name }}"{% endif %}</h2>
+    {% if action == 'Edit' and current_user.is_admin %}
+        <p>
+             <a href="{{ url_for('manage_project_skills', project_id=project.id) }}" class="btn btn-secondary btn-sm mb-3">Manage Required Skills</a>
+        </p>
+    {% endif %}
+    <form method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Project Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{ project.name if project else request.form.get('name', '') }}" required>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="service_line" class="form-label">Service Line</label>
+                <input type="text" class="form-control" id="service_line" name="service_line" value="{{ project.service_line if project else request.form.get('service_line', '') }}">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="project_type" class="form-label">Project Type</label>
+                <input type="text" class="form-control" id="project_type" name="project_type" value="{{ project.project_type if project else request.form.get('project_type', '') }}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="sow_start_date" class="form-label">SOW Start Date</label>
+                <input type="date" class="form-control" id="sow_start_date" name="sow_start_date" value="{{ project.sow_start_date | format_date if project else request.form.get('sow_start_date', '') }}">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="sow_end_date" class="form-label">SOW End Date</label>
+                <input type="date" class="form-control" id="sow_end_date" name="sow_end_date" value="{{ project.sow_end_date | format_date if project else request.form.get('sow_end_date', '') }}">
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-6 mb-3">
+                 <label for="actual_start_date" class="form-label">Actual Start Date</label>
+                 <input type="date" class="form-control" id="actual_start_date" name="actual_start_date" value="{{ project.actual_start_date | format_date if project else request.form.get('actual_start_date', '') }}">
+             </div>
+             <div class="col-md-6 mb-3">
+                 <label for="actual_end_date" class="form-label">Actual End Date</label>
+                 <input type="date" class="form-control" id="actual_end_date" name="actual_end_date" value="{{ project.actual_end_date | format_date if project else request.form.get('actual_end_date', '') }}">
+             </div>
+         </div>
+         <div class="mb-3">
+             <label for="po_amount" class="form-label">PO Amount</label>
+             <input type="text" class="form-control" id="po_amount" name="po_amount" value="{{ project.po_amount if project and project.po_amount is not none else request.form.get('po_amount', '') }}" placeholder="e.g. 1234.50">
+         </div>
+         <div class="row">
+             <div class="col-md-6 mb-3">
+                 <label for="sow_allocation_fte" class="form-label">SOW Allocation FTE</label>
+                 <input type="number" step="0.01" class="form-control" id="sow_allocation_fte" name="sow_allocation_fte"
+                        value="{{ project.sow_allocation_fte if project and project.sow_allocation_fte is not none else request.form.get('sow_allocation_fte', '') }}">
+             </div>
+             <div class="col-md-6 mb-3">
+                 <label for="actual_allocation_fte" class="form-label">Actual Allocation FTE</label>
+                 <input type="number" step="0.01" class="form-control" id="actual_allocation_fte" name="actual_allocation_fte"
+                        value="{{ project.actual_allocation_fte if project and project.actual_allocation_fte is not none else request.form.get('actual_allocation_fte', '') }}">
+             </div>
+         </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+        <a href="{{ url_for('projects_list') }}" class="btn btn-secondary">Cancel</a>
+    </form>
+    {# ... (rest of the template unchanged) ... #}
+</div>
+{% endblock %}

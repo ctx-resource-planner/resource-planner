@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}Reports{% endblock %}
+{% block content %}
+
+<div class="container mt-4">
+    <h2>Available Reports</h2>
+    
+    <!-- Allocation Matrix special card -->
+    <div class="card mb-3 border-success">
+        <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+                <strong>Employee Allocation Matrix</strong>
+                <div class="text-muted small">
+                    Forecast and analyze employee allocations across projects and months, with SOW/Actual filters.
+                </div>
+            </div>
+            <a href="{{ url_for('reports.allocation_matrix') }}" class="btn btn-success btn-sm">
+                <i class="fas fa-table"></i> View Matrix
+            </a>
+        </div>
+    </div>
+
+    <!-- All reports in list format -->
+    <ul class="list-group">
+        <!-- Dynamic reports -->
+        {% for key, report in reports.items() %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+                <strong>{{ report.title }}</strong>
+                <div class="text-muted small">{{ report.description }}</div>
+            </div>
+            <a href="{{ url_for('reports.report_view', report_key=key) }}" class="btn btn-primary btn-sm">View</a>
+        </li>
+        {% endfor %}
+        
+        <!-- Executive Dashboard as list item -->
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+                <strong>Executive Utilization Dashboard</strong>
+                <div class="text-muted small">
+                    Interactive executive dashboard with employee utilization, service line splits, billable capacity, and month filtering.
+                </div>
+            </div>
+            <a href="/executive-utilization-dashboard" class="btn btn-primary btn-sm">
+                <i class="fas fa-external-link-alt"></i> Open
+            </a>
+        </li>
+    </ul>
+
+</div>
+{% endblock %}

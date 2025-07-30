@@ -1,0 +1,39 @@
+﻿{# templates/shared/report_actions.html - Reusable component for report actions #}
+<div class="report-actions d-flex gap-2 mb-3">
+    <a href="{{ download_url }}" class="btn btn-primary btn-sm">
+        <i class="fas fa-file-excel me-1"></i> {{ download_text|default('Download as Excel') }}
+    </a>
+    <button onclick="sendReportToEmail('{{ email_endpoint }}')" class="btn btn-success btn-sm">
+        <i class="fas fa-envelope me-1"></i> {{ email_text|default('Email to me') }}
+    </button>
+</div>
+
+<script>
+function sendReportToEmail(endpoint) {
+    if (confirm('Send this report to your email?')) {
+        // Show loading state
+        const btn = event.target;
+        const originalHtml = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>Sending...';
+        
+        fetch(endpoint)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Report has been sent to your email!');
+                } else {
+                    alert('Error: ' + (data.error || 'Failed to send email'));
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to send email. Please check the console for details.');
+            })
+            .finally(() => {
+                btn.disabled = false;
+                btn.innerHTML = originalHtml;
+            });
+    }
+}
+</script>

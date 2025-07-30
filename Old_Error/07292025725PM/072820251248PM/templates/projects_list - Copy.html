@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}Projects Management{% endblock %}
+{% block content %}
+<div class="card shadow-sm">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="fas fa-tasks me-2"></i>Projects List</span>
+        {% if current_user.is_admin %}
+            <a href="{{ url_for('add_project') }}" class="btn btn-success btn-sm"><i class="fas fa-plus me-1"></i> Add New Project</a>
+        {% endif %}
+    </div>
+    <div class="card-body p-0">
+        <div class="alert alert-info mb-2" style="font-size:0.93rem;">
+            All allocation values are represented in terms of Full-Time Equivalent (FTE).
+        </div>
+         {% if projects %}
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-condensed mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th class="wrap-text">Name</th>
+                        <th>Service Line</th>
+                        <th>Project Type</th>
+                        <th class="no-wrap">SOW Start</th>
+                        <th class="no-wrap">SOW End</th>
+                        <th class="no-wrap">Actual Start</th>
+                        <th class="no-wrap">Actual End</th>
+                        <th>PO Amount</th>
+                        <th>SOW Allocation</th>
+                        <th>Actual Allocation</th>
+                        {% if current_user.is_admin %}
+                            <th style="width: 180px;">Actions</th>
+                        {% endif %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for project_item in projects %}
+                    <tr>
+                        <td class="wrap-text">{{ project_item.name }}</td>
+                        <td>{{ project_item.service_line or 'N/A' }}</td>
+                        <td>{{ project_item.project_type or 'N/A' }}</td>
+                        <td class="no-wrap">{{ project_item.sow_start_date | format_date }}</td>
+                        <td class="no-wrap">{{ project_item.sow_end_date | format_date }}</td>
+                        <td class="no-wrap">{{ project_item.actual_start_date | format_date }}</td>
+                        <td class="no-wrap">{{ project_item.actual_end_date | format_date }}</td>
+                        <td class="text-end">{{ "{:,.2f}".format(project_item.po_amount) if project_item.po_amount is not none else 'N/A' }}</td>
+                        <td>{{ project_item.sow_allocation_fte if project_item.sow_allocation_fte is not none else 'N/A' }}</td>
+                        <td>{{ project_item.actual_allocation_fte if project_item.actual_allocation_fte is not none else 'N/A' }}</td>
+                        {% if current_user.is_admin %}
+                        <td class="action-buttons d-flex">
+                            <a href="{{ url_for('utilities.project_setup', project_id=project_item.id) }}" 
+							   class="btn btn-sm btn-primary me-1" 
+							   title="View Project Setup">
+								<i class="fas fa-cog"></i>
+							</a>
+                            <a href="{{ url_for('combined_project_view', project_id=project_item.id) }}" 
+                               class="btn btn-sm btn-info me-1" 
+                               title="View Combined Details">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="{{ url_for('edit_project', project_id_param=project_item.id) }}" 
+                               class="btn btn-sm btn-warning me-1" 
+                               title="Edit">
+                                <i class="fas fa-pencil-alt"></i>
+                            </a>
+                            <form action="{{ url_for('delete_project', project_id_param=project_item.id) }}" 
+                                  method="post" 
+                                  onsubmit="return confirm('Delete project \'{{ project_item.name }}\'?');">
+                                <button type="submit" class="btn btn-sm btn-danger" title="Delete">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </form>
+                        </td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="alert alert-info m-3 text-center">No projects found.{% if current_user.is_admin %} <a href="{{ url_for('add_project') }}">Add one?</a>{% endif %}</div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
