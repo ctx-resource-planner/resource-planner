@@ -79,7 +79,7 @@ def reports_list():
 def test_redirect():
     """Test route to verify redirects work"""
     from flask import request
-    print(f"🧪 TEST ROUTE CALLED with args: {dict(request.args)}")
+    print(f"TEST ROUTE CALLED with args: {dict(request.args)}")
     return f"Test successful! Args: {dict(request.args)}"
     
 # --- NEW: Executive Utilization Dashboard ---
@@ -98,8 +98,8 @@ def executive_utilization_dashboard():
         end_month = request.args.get('end_month')
 
         # DEBUG: Print received parameters
-        print(f"🔍 RECEIVED PARAMETERS: start_month={start_month}, end_month={end_month}")
-        print(f"🔍 REQUEST ARGS: {dict(request.args)}")
+        print(f"RECEIVED PARAMETERS: start_month={start_month}, end_month={end_month}")
+        print(f"REQUEST ARGS: {dict(request.args)}")
                 
         # Get data
         sql_query = "SELECT * FROM dashboard_utilization_data ORDER BY username, local_date"
@@ -256,7 +256,7 @@ def executive_utilization_dashboard():
                              timestamp=datetime.now().strftime('%Y-%m-%d %H:%M'))
         
     except Exception as e:
-        print(f"❌ Error: {str(e)}")
+        print(f"Error: {str(e)}")
         import traceback
         traceback.print_exc()
         return render_template_string(EXECUTIVE_TEMPLATE, rows=[], months=[], legend={}, 
@@ -564,7 +564,7 @@ def export_executive_dashboard():
         )
         
     except Exception as e:
-        print(f"❌ Export Error: {str(e)}")
+        print(f"Export Error: {str(e)}")
         flash(f"Error generating Excel file: {str(e)}", "danger")
         return redirect(url_for('reports.executive_utilization_dashboard'))
 
@@ -643,7 +643,7 @@ def email_executive_dashboard():
         flash(f"Report sent to {recipient_email}.", "success")
         
     except Exception as e:
-        print(f"❌ Email Error: {str(e)}")
+        print(f"Email Error: {str(e)}")
         flash(f"Failed to send email report. Error: {str(e)}", "danger")
     
     return redirect(url_for('reports.executive_utilization_dashboard'))
