@@ -129,6 +129,30 @@ def timesheet_summary():
         flash(f"Error: {str(e)}", "danger")
         return render_template('utilities/timesheet_summary.html', summary=[])
 
+# --- Clone Timesheet Upload ---
+@utilities_bp.route('/clone_tsheet_upload', methods=['GET', 'POST'])
+@login_required
+def clone_tsheet_upload():
+    if request.method == 'POST':
+        try:
+            project_setup = ProjectSetup(
+                company_name=request.form.get('company_name'),
+                project_name_quickbooks=request.form.get('project_name_quickbooks'),
+                submitted_by=current_user.email,
+                email_recipients=request.form.get('email_recipients')
+            )
+            db.session.add(project_setup)
+            db.session.commit()
+            flash('Project setup form submitted successfully!', 'success')
+            return redirect(url_for('utilities.clone_tsheet_upload'))
+        except Exception as e:
+            db.session.rollback()
+            flash(f'Error submitting form: {str(e)}', 'danger')
+            return redirect(url_for('utilities.clone_tsheet_upload'))
+    
+    return render_template('utilities/clone_tsheet_upload.html')
+
+
 # --- Demo Report ---
 @utilities_bp.route('/demo/report')
 @login_required

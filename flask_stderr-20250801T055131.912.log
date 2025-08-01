@@ -1,0 +1,2 @@
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^

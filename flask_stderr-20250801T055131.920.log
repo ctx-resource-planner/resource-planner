@@ -1,0 +1,4 @@
+se = self.handle_exception(e)
+  File "C:\apps\resource_planner_web\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\apps\resource_planner_web\venv\Lib\site-pack

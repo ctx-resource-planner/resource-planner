@@ -1,16 +1,6 @@
 ﻿{% extends 'base.html' %}
 {% block title %}Projects Management{% endblock %}
 {% block content %}
-
-<!-- Add this to projects_list.html -->
-<div class="text-muted small mt-2">
-    {% if cache_info %}
-    <i class="fas fa-info-circle"></i> 
-    Loaded from cache at {{ cache_info.time }} (expires in {{ cache_info.expires_in }} seconds)
-    {% endif %}
-</div>
-
-
 <div class="card shadow-sm">
     <div class="card-header d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
@@ -68,7 +58,7 @@
                         <td class="no-wrap align-middle">{{ project.actual_end_date.strftime('%Y-%m-%d') if project.actual_end_date else 'N/A' }}</td>
                         <td class="align-middle">{{ "${:,.2f}".format(project.po_amount) if project.po_amount else 'N/A' }}</td>
                         <td class="align-middle">{{ project.sow_allocation_fte|round(2) if project.sow_allocation_fte is not none else 'N/A' }}</td>
-                        <td class="align-middle">{{ "%.2f"|format(project.actual_allocation_fte) if project.actual_allocation_fte is not none else '0.00' }}</td>
+                        <td class="align-middle">{{ project.actual_allocation_fte|round(2) if project.actual_allocation_fte is not none else 'N/A' }}</td>
                         {% if current_user.is_admin %}
                         <td class="actions align-middle">
                             <a href="{{ url_for('edit_project', project_id=project.id) }}" 
